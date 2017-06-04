@@ -359,10 +359,14 @@ iframe {
 .form-control:-ms-input-placeholder {
   color: #888;  
 }
-input:focus::-webkit-input-placeholder, input:active::-webkit-input-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
+/*input:focus::-webkit-input-placeholder, input:active::-webkit-input-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
 input:focus:-moz-placeholder, input:active:-moz-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s;} 
 input:focus::-moz-placeholder, input:active::-moz-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s; } 
-input:focus:-ms-input-placeholder, input:active:-ms-input-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s; } 
+input:focus:-ms-input-placeholder, input:active:-ms-input-placeholder { color:#ffffff; position: relative; top: -30px;   -webkit-transition: all ease 0.25s; transition: all ease 0.25s; } */
+input:focus::-webkit-input-placeholder, input:active::-webkit-input-placeholder { color:transparent;  -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
+input:focus:-moz-placeholder, input:active:-moz-placeholder { color:transparent;  -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
+input:focus::-moz-placeholder, input:active::-moz-placeholder { color:transparent;  -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
+input:focus:-ms-input-placeholder, input:active:-ms-input-placeholder { color:transparent;  -webkit-transition: all ease 0.25s; transition: all ease 0.25s;}
 .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1576,7 +1580,7 @@ body.enable-preloader.done-preloader > .document {
 
 #portfolio{
   padding-top:70px;
-  background:url('/images/bg-portfolio.jpg') no-repeat fixed;
+  background:url('../images/bg-portfolio.jpg') no-repeat fixed;
   background-size:cover;
   color:#fff;
 }
